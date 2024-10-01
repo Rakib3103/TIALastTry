@@ -1,0 +1,5 @@
+# .vercelignore
+large_media/
+node_modules/
+tests/
+.git/
