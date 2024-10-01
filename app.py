@@ -2,14 +2,11 @@ from flask import Flask, request, jsonify, render_template
 import os
 import json
 from werkzeug.utils import secure_filename
-from langchain.embeddings import OpenAIEmbeddings
 from langchain.indexes.vectorstore import VectorStoreIndexWrapper
-from langchain.vectorstores import Chroma
 from langchain.chains import ConversationalRetrievalChain
 from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain_community.chat_models import ChatOpenAI
-from langchain.chat_models import ChatOpenAI
 import openai
 from io import BytesIO
 import pytesseract
