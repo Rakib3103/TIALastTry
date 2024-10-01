@@ -173,7 +173,3 @@ def process_message():
         print(f"Error: {e}")
         return jsonify({"message": "An unexpected error occurred", "error": str(e)}), 500
 
-if __name__ == '__main__':
-    if not os.path.exists('uploads'):
-        os.makedirs('uploads')
-    app.run(debug=True)
